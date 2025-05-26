@@ -14,7 +14,7 @@
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     height: 80vh;
-    width: 80vw;
+    width: 60vw;
     background-color: aliceblue;
 }
 .pt1{
@@ -32,16 +32,52 @@
 }
 input#item{
     padding: 10px;
+    width: 100%;
     border: none;
     outline: none;
     border-radius: 2px;
+    background:none;
 }
 .search{
     display: flex;
     gap: 10px;
+    width: 30vw;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 5px 10px;
+    background-color: rgb(248, 248, 248);
 }
 .search button{
     padding: 8px 10px;
     border: none;
     border-radius: 5px;
+}
+.pt2{
+    border: 2px solid antiquewhite;
+    border-radius: 10px;
+    width: 50vw;
+    min-height: 50vh;
+    margin: 35px auto 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.pt2 ul{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    list-style: none;
+    padding: 5px;
+}
+.pt2 ul li{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    min-width: 25vw;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.actions input[type="checkbox"]{
+    padding: 20px;
+    
 }
