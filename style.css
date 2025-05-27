@@ -87,19 +87,26 @@
 .pt2 ul li {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px;
     background-color: #f0f0f0;
+    font-family: "Open Sans", sans-serif;
     border-radius: 5px;
     padding: 10px 15px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
     transition: background 0.3s ease;
 }
 .pt2 ul li.done .content {
     text-decoration: line-through;
+    font-style: italic;
     color: gray;
 }
 .content {
     flex: 1;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    margin-right: 10px;
 }
 .actions {
     display: flex;
