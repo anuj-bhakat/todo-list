@@ -1,48 +1,53 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.main-container{
+.main-container {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(59, 39, 75);
 }
-.container{
+.container {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     height: 80vh;
     width: 60vw;
     background-color: aliceblue;
+    padding: 20px;
+    overflow-y: auto;
 }
-.pt1{
+.pt1 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    margin-top: 10px;
 }
-.title{
+.title {
     font-size: 50px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(48, 37, 77);
 }
-.search input[type="text"]{
+.search input[type="text"] {
     padding: 10px;
     width: 100%;
     border: none;
     outline: none;
-    border-radius: 2px;
-    background:none;
     font-size: 16px;
+    background: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-.search:focus-within{
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+.search:focus-within {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px;
 }
-.search{
+.search {
     display: flex;
     gap: 10px;
     width: 30vw;
@@ -52,13 +57,16 @@
     background-color: rgb(248, 248, 248);
     transition: all 150ms;
 }
-.search button{
+.search button {
     padding: 8px 15px;
     border: none;
     border-radius: 5px;
-    background-color: rgb(183, 191, 195);
+    background-color: rgb(118, 141, 131);
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
 }
-.pt2{
+.pt2 {
     border: 2px solid antiquewhite;
     border-radius: 10px;
     width: 50vw;
@@ -66,23 +74,48 @@
     margin: 35px auto 0 auto;
     display: flex;
     justify-content: center;
+    padding: 15px;
+    background-color: white;
 }
-.pt2 ul{
+.pt2 ul {
     display: flex;
     gap: 15px;
     flex-direction: column;
     list-style: none;
-    padding: 5px;
+    width: 100%;
 }
-.pt2 ul li{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: white;
-    min-width: 25vw;
+.pt2 ul li {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px;
+    background-color: #f0f0f0;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
 }
-.actions input[type="checkbox"]{
-    padding: 20px;
+.pt2 ul li.done .content {
+    text-decoration: line-through;
+    color: gray;
+}
+.content {
+    flex: 1;
+}
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.actions input[type="checkbox"] {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.actions button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(236, 97, 97);
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
 }

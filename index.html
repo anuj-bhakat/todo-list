@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <div class="main-container">
         <div class="container">
@@ -15,26 +17,12 @@
                     <div class="title">Todo List</div>
                 </div>
                 <div class="search">
-                    <input type="text" name="item" id="item">
-                    <button>+</button>
+                    <input type="text" name="item" id="item" placeholder="Add a new task...">
+                    <button id="addBtn">+</button>
                 </div>
             </div>
             <div class="pt2">
-                <ul>
-                    <li>
-                        <div class="content">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, nostrum.
-                        </div>
-                        <div class="actions">
-                            <input type="checkbox" name="status">
-                            <button>-</button>
-                        </div>
-                    </li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                </ul>
+                <ul id="todoList"></ul>
             </div>
         </div>
     </div>
